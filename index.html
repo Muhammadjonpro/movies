@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.rtl.css.map">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Movies</title>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="container py-4">
+        <h2 class="text-center mb-4">Movies catalog</h2>
+
+        <div class="row">
+          <div class="col-4 position-relative">
+            <div class="position-sticky w-100" style="top: 30px;">
+
+              <div class="">
+                
+                <form class="mb-5">
+                <input type="text" class="form-control form-control-sm mb-2" aria-describedby="search for movies"
+                  placeholder="search for movies">
+                  
+                  <input type="number" class="form-control form-control-sm mb-2" placeholder="IMDB rating" min="0"
+                  max="10" step="0.1">
+                  
+                <select class="form-select form-select-sm mb-2" aria-label="Default select example">
+                  <option selected>ALL</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select form-select-sm mb-2" aria-label="Default select example">
+                  <option selected>rating(first hight)</option>
+                  <option value="1">(first low)</option>
+                </select>
+                
+                
+                <button type="submit" class="btn btn-primary w-100 btn-sm">Submit</button>
+              </form>
+              <h3 class="text-center">Bookmarked movies</h3>
+              <ul class="list-group">
+                <li class="list-group-item p-3">
+                  <h4 class="d-inline-block text-truncate h5" style="max-width:100%;">Pokemon</h4>
+                  <button class="btn btn-danger btn-sm d-block " type="button">Remobe</button>
+                </li>
+                <li class="list-group-item p-3">
+                  <h4 class="d-inline-block text-truncate h5" style="max-width:100%;">Pokemon</h4>
+                  <button class="btn btn-danger btn-sm d-block" type="button">Remobe</button>
+                </li>
+                <li class="list-group-item p-3">
+                  <h4 class="d-inline-block text-truncate h5" style="max-width:100%;">Pokemon</h4>
+                  <button class="btn btn-danger btn-sm d-block" type="button">Remobe</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          <div class="col-8">
+            <h3 class="fs-5">Search result: <span>2</span></h3>
+            <div class="alert alert-success alert-dismissible fade show p-2" role="alert">
+              <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+              <button type="button" class="btn-close btn-sm p-0 h-100 pe-3" data-bs-dismiss="alert"
+                aria-label="Close"></button>
+            </div>
+            <div class="row row-cols-2 mb-4">
+              <div class="col">
+                <div class="card">
+                  <img src="img/Avengers.jpg" class="card-img-top"
+                    style="max-height: 200px; object-fit: cover; object-position: center;" alt="Avengers">
+                  <div class="card-body">
+                    <h5 class="card-title text-truncate" style="max-width: 100%;">Avengers: infinity War</h5>
+                    <div class="fs-5 fw-bold mb-2">
+                      <img src="img/calendar_month_FILL0_wght400_GRAD0_opsz48.svg" alt="month" width="20" height="20">
+                      <span>2018</span>
+                    </div>
+                    <div class="fs-5 fw-bold mb-2">
+                      <img src="img/star_FILL0_wght400_GRAD0_opsz48.svg" alt="month" width="20" height="20">
+                      <span>8.7</span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                      <a href="#" class="btn btn-outline-danger">Watch trailer</a>
+                      <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        More info
+                      </button>
+                      <button class="btn btn-outline-success" type="button">Bookmark</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/Avengers2.jpg" class="card-img-top"
+                    style="max-height: 200px; object-fit: cover; object-position: center;" alt="Avengers">
+                  <div class="card-body">
+                    <h5 class="card-title">The:Avengers</h5>
+                    <div class="fs-5 fw-bold mb-2">
+                      <img src="img/calendar_month_FILL0_wght400_GRAD0_opsz48.svg" alt="month" width="20" height="20">
+                      <span>2012</span>
+                    </div>
+                    <div class="fs-5 fw-bold mb-2">
+                      <img src="img/star_FILL0_wght400_GRAD0_opsz48.svg" alt="month" width="20" height="20">
+                      <span>8.7</span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                      <a href="#" class="btn btn-outline-danger">Watch trailer</a>
+                      <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        More info
+                      </button>
+                      <button class="btn btn-outline-success" type="button">Bookmark</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>
